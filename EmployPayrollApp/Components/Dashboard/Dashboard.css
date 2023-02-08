@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.columns{
+    display:flex;
+    flex-direction: row;
+    border:2px solid rgb(154, 154, 154);
+}
+
+.headerOfSignIn{
+    display:flex;
+    flex-direction: column; 
+}
+
+.Child{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.headerOfDashboard{
+    width:100vw;
+    background-color: rgb(166, 166, 166);
+    border:4rem solid rgb(247, 245, 245);
+}
+.Details{
+    padding:1rem;
+}
+.bodyOfDashboard{
+    background-color: rgb(213, 213, 213);
+}
+.TableWrapper{
+    background-color: rgb(224, 224, 224);
+}
+.header{
+    height:10vh;
+    /* border:3px solid rgb(154, 154, 154); */
+    background-color: rgb(243, 243, 243);;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.employHeading{
+    color:rgb(83, 83, 84);
+    font-size: larger;
+    font-weight: 600;
+    font-family:sans-serif;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+
+}
+.AccountClass{
+    font-family:sans-serif;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.header2{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin:1rem;
+}
+
+.ExportButtons{
+    display:flex;
+    flex-direction:row;
+}
+
+.Next2{
+    background-color:rgb(4, 165, 15);
+    outline:none;
+    border:#4377f9;
+    padding:0.6rem 1.4rem;
+    border-radius: 5px;
+    color:white;
+    font-weight: 500;
+    margin-right:1rem;
+}
+.Next2Text{
+    color:white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding:1rem;
+    color:black;
+    margin-right:2rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .ExportSpan{
+    color:black;
+    font-size: 1.5rem;
+  }
+  .ButtonInDropdown{
+    border:none;
+    padding:1rem;
+  }
+  .ButtonInDropdown:hover{
+    color:blue;
+  }
+
+  .formgroup input{
+    width: 100%;
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-top: 7%;
+}
+/* .EditIcon{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+} */

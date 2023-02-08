@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="EmployPayrollApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Components/EmployPage/EmployPage.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="../../ngStorage.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img class="LogoClass" src="../../Images/logo.jpg">
+        <p class="employHeading">EMPLOY PAYROLL</p>
+        <img class="AccountClass" src="../../Images/Accounts.png" height='40' width="40">
+    </div>
+    <div class="MainPage">
+        <div class='headerOfEmpPage' ng-controller="DashboardCtrl">
+
+            <div class="HeadingDetails">Employee Details</div>
+            <form class="FormSection">
+                <div class="EachColumn">
+                    <label>Name</label>
+                    <input class="EmpData" ng-model="name">
+                </div>
+                <div class="EachColumn">
+                    <label>Gender</label>
+                    <input class="EmpData" ng-model="gender">
+                </div>
+                <div class="EachColumn">
+                    <label>Department</label>
+                    <input class="EmpData" ng-model="department">
+                </div>
+                <div class="EachColumn">
+                    <label>Profile</label>
+                    <input class="EmpData" ng-model="profile">
+                </div>
+
+                <div class="EachColumn">
+                    <label>Salary</label>
+                    <input class="EmpData" ng-model="salary">
+                </div>
+                <div class="EachColumn">
+                    <label>StartDate</label>
+                    <input class="EmpData" ng-model="startDate">
+                </div>
+
+                <div class="FormButtons">
+                    <Button class="Next3" type="submit" ng-click="">Cancel</Button>
+                    <Button class="Next3" type="submit" ng-click="AddEmploy(name,profile,gender,department,salary,startDate)">Submit</Button>
+                    <Button class="Next3" type="submit" ng-click="">Reset</Button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

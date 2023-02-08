@@ -14,7 +14,7 @@ app.controller("loginCtrl",function($scope,$http,$location,$window){
             console.log(response);
 
             if(response.data){
-                $window.localStorage.setItem('token', response.data.token);
+                $window.localStorage.setItem('token', response.data.data);
                 /* $localStorage.message = response.data.token;
                 console.log($localStorage.message); */
                 $location.path('/Dashboard');
