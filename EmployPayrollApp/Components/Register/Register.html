@@ -1,0 +1,51 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="EmployPayrollApp" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div ng-controller="registerCtrl">
+        <header>
+            <div class='container'>
+                <div class='left'>
+                    <img class='GoogleLogo' src='../../Images/GoogleLogo.png' width='90'></img>
+                    <h3 class='Createtext'>Create your Google Account</h3>
+                        <div class='names'>
+                        <input ng-model="firstName" placeholder="First Name" type="text">
+                        <input ng-model="lastName" placeholder="Last Name" type="text">
+                        </div>
+
+                        <div id='uname'>
+                            <input ng-model="email" class='googleEmail' placeholder="Email">
+                            <!-- <label class='gmail'>@gmail.com</label> -->
+                        </div>
+                        <span>You can use letters, numbers & period.</span>
+                        <br/>
+                        <a href="#">Use my current email address instead</a>
+                        
+                        <div class='password'>
+                            <input ng-model="password" placeholder="password">
+                        </div>
+
+                        <span>Use 8 or more characters with a mix of letters, numbers & symbols</span>
+                        <br/>
+                        <div> </div>
+                        <div class='b-Links'>
+                            <a href="#!Login" class='sign-In-Link' >Sign in instead</a>
+                            <Button class="nextButton" type="submit" ng-click="postdata(firstName,lastName,email,password)">Next</Button>
+                        </div>
+                </div>
+                <div class='right'>
+                    <img class='accountLogo'src='../../Images/accountLogo.svg'></img>
+                    <p>One account. All of Google working for you</p>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+</body>
+
+</html>

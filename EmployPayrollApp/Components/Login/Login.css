@@ -1,0 +1,90 @@
+.headerOfSignIn{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.maindiv{
+    width:470px;
+    height:90%;
+    border-radius: 0.5rem;
+    border: 1px solid #cec8c8;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2.5rem 2.5rem 2.5rem 2.5rem;
+    flex-wrap:wrap;
+}
+.Sign-In-Heading{
+    font-size: 150%;
+    color:#1d1b1b;
+    margin:0.6rem 0;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+.text2{
+    color:#565353;
+    font-size:100%;
+    margin-bottom:1rem;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+.Child-one{
+    text-align: center;
+}
+.Child-two{
+    display:flex;
+    flex-direction: column;
+}
+input[type='text']{
+    outline:none;
+    margin:0.2rem;
+    font-size: 15px;
+}
+.InputFields{
+
+    padding:0.6rem;
+}
+
+.text3{
+    color:#6e6b6b;
+    font-size:89%;
+    margin-bottom:0.5rem;
+    margin-top:2rem;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+.Link{
+    text-decoration:none;
+    font-weight: 550;
+    font-size:0.8rem;
+    color:#4377f9;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+.Bottom-Part{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:5rem;
+
+}
+.Next{
+    background-color:rgb(9, 117, 226);
+    outline:none;
+    border:#4377f9;
+    padding:0.6rem 1.4rem;
+    border-radius: 5px;
+    color:white;
+    font-weight: 500;
+    margin-right:1rem;
+}
+Button:hover{
+    cursor:pointer;
+    opacity:0.9;
+}
+
+input:focus{
+    transition:0.4s;
+}
+.CreateAccount{
+    margin-left:1rem;
+}

@@ -1,0 +1,141 @@
+header{
+    width:100vw;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.container{
+    max-width:780px;
+    min-height:550px;
+    background:white;
+    border:1px solid #b2bec3;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding:2rem;
+}
+
+.left{
+    flex-basis:55%;
+   /*  padding:0.8rem; */
+    margin-left:1.2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: space-between;
+
+}
+.right{
+    flex-basis:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+}
+.right img{
+    width:80%;
+    margin-top: 2rem;
+}
+.right p{
+    text-align:center;
+    margin:auto;
+    max-width:14rem;
+}
+h3{
+    margin:1rem 0;
+    color:#2d3436;
+    font-size:x-large;
+    font-weight: 100;
+}
+
+span{
+    color:grey;
+    font-size:0.8rem;
+    width:100%;
+}
+a{
+    text-decoration:none;
+    font-weight:600;
+    font-size:0.8rem;
+    color:#3498db
+}
+
+.b-Links{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:5rem;
+}
+.nextButton{
+    background-color:#0688de;
+    border:none;
+    border-radius: 0.2rem;
+    padding:0.5rem 1.3rem;
+    color:white;
+}
+input{
+    transition:0.4s;
+    margin-top:0.2rem;
+}
+#uname{
+    position:relative;
+    
+}
+#uname label{
+    position:absolute;
+    right:0;
+    font-size:1rem; 
+}
+.gmail{
+    margin-top:1.6rem;
+    padding:0 1rem;
+}
+.googleEmail{
+    height:2rem;
+    width:100%;
+}
+
+.names{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height:2.3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.password{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height:2.3rem;
+    margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width:770px){
+    header{
+        align-items:flex-start;
+        padding:0.2rem;
+    }
+    .right{
+        display:none;
+    }
+    .container{
+        flex-direction:column;
+        border:none;
+    }
+    form input[type='text']{
+        width:100%;
+    }
+    form input[type='password']{
+        width:100%;
+        margin:0.8rem 0;
+    }
+    /* .b-links{
+        margin-top:1rem;
+    } */
+}
