@@ -134,3 +134,12 @@ body{
     flex-direction: row;
     justify-content: center;
 } */
+
+.circle{
+    height:4rem;
+    width:4rem;
+    color:black;
+    /* background-color: black; */
+    border:2px solid black;
+    border-radius: 2.5rem;
+}

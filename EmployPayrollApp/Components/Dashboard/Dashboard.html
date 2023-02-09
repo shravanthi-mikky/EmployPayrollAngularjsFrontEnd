@@ -38,7 +38,7 @@
             <div class="dropdown">
                 <span class="ExportSpan">Export As</span>
                 <div class="dropdown-content">
-                    <Button  class="ButtonInDropdown" type="submit" id="btnexport" ng-click="ExportEmployeesData()">
+                    <Button  class="ButtonInDropdown" type="submit" id="btnexport" ng-click="exportData()">
                         ExportAsExcel</Button>
                     <Button class="ButtonInDropdown" type="submit" value="ExportAsPdf" ng-click="ExportAsPdf()">ExportAsPdf</Button>
                 </div>
@@ -69,8 +69,8 @@
                     <th>Profile</th>
                     <th>Salary</th>
                     <th>StartDate</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th data-html2canvas-ignore="true">Edit</th>
+                    <th data-html2canvas-ignore="true">Delete</th>
                 </tr>
                 <tr ng-repeat="employ in AllEmployeesArray">
                     <td>{{employ.name}}</td>
@@ -79,11 +79,11 @@
                     <td>{{employ.profile}}</td>
                     <td>{{employ.salary}}</td>
                     <td>{{employ.startDate}}</td>
-                    <td class="EditIcon"><i class="fa fa-edit" ng-click="editmodal(employ.employeeId,employ.name,employ.gender,employ.department,employ.profile,employ.salary,employ.startDate)"></i>
+                    <td data-html2canvas-ignore="true" class="EditIcon"><i class="fa fa-edit" ng-click="editmodal(employ.employeeId,employ.name,employ.gender,employ.department,employ.profile,employ.salary,employ.startDate)"></i>
                        <!--  <i class="fa fa-trash" ng-click="DeleteEmp(employ.employeeId)"></i> -->
                     </td>
                     
-                    <td>
+                    <td data-html2canvas-ignore="true" >
                         <div class='Child'>
                             <!-- <Button class="Next" type="submit" ng-click="UpdateEmploy(employ.employeeId,employ.name,employ.gender,employ.department,employ.profile,employ.salary,employ.startDate)"> -->
                             <!-- <Button class="Next" type="submit" ng-click="GetEmployById(employ.employeeId)">
@@ -96,6 +96,12 @@
                     </td>
                 </tr>
             </table>
+        </div>
+    </div>
+
+    <div class="Outercircle">
+        <div class="circle">
+
         </div>
     </div>
 </body>
