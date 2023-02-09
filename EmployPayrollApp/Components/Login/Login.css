@@ -55,7 +55,7 @@ input[type='text']{
 .Link{
     text-decoration:none;
     font-weight: 550;
-    font-size:0.8rem;
+    font-size:1.4rem;
     color:#4377f9;
     font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
 }
@@ -64,7 +64,7 @@ input[type='text']{
     display:flex;
     justify-content:space-between;
     align-items:center;
-
+margin-top: 1rem;
 }
 .Next{
     background-color:rgb(9, 117, 226);

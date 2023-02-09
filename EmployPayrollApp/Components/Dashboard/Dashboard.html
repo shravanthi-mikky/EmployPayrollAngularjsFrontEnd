@@ -29,12 +29,7 @@
             <p class="">EMPLOY DETAILS</p>
             <Button class="Next2" type="submit">
                 <a class="Next2Text" href="#!EmployPage"> Add Employ</a></Button>
-            <!-- <div class="ExportButtons">
-                <Button class="Next2" type="submit" id="btnexport" ng-click="ExportEmployeesData()">
-                    <a class="Next2Text">ExportAsExcel</a></Button>
-                <Button class="Next2" type="submit" value="ExportAsPdf" ng-click="ExportAsPdf()">
-                    <a class="Next2Text">ExportAsPdf</a></Button>
-            </div> -->
+            
             <div class="dropdown">
                 <span class="ExportSpan">Export As</span>
                 <div class="dropdown-content">
@@ -58,7 +53,6 @@
                 padding: 15px;
             }
         </style>
-        <!-- <input type="button" value="Export to Excel" id="btnexport" ng-click="ExportEmployeesData()" /> -->
         <div class="TableWrapper" id="export">
 
             <table class="Details" id="tblCustomers" ng-controller="DashboardCtrl" ng-init="getAllEmployees()">
@@ -80,30 +74,19 @@
                     <td>{{employ.salary}}</td>
                     <td>{{employ.startDate}}</td>
                     <td data-html2canvas-ignore="true" class="EditIcon"><i class="fa fa-edit" ng-click="editmodal(employ.employeeId,employ.name,employ.gender,employ.department,employ.profile,employ.salary,employ.startDate)"></i>
-                       <!--  <i class="fa fa-trash" ng-click="DeleteEmp(employ.employeeId)"></i> -->
                     </td>
-                    
                     <td data-html2canvas-ignore="true" >
                         <div class='Child'>
-                            <!-- <Button class="Next" type="submit" ng-click="UpdateEmploy(employ.employeeId,employ.name,employ.gender,employ.department,employ.profile,employ.salary,employ.startDate)"> -->
-                            <!-- <Button class="Next" type="submit" ng-click="GetEmployById(employ.employeeId)">
-                                <a href="#!UpdateEmploy" class='sign-In-Link'>Update</a> --> 
-                            </Button>
-                            <Button class="Next" type="submit" ng-click="DeleteEmploy(employ.employeeId)">
-
-                                Delete</Button>
+                            <Button class="Next" type="submit" ng-click="DeleteEmploy(employ.employeeId)">Delete</Button>
                         </div>
                     </td>
                 </tr>
             </table>
         </div>
     </div>
-
-    <div class="Outercircle">
+    <!-- <div class="Outercircle">
         <div class="circle">
-
         </div>
-    </div>
+    </div> -->
 </body>
-
 </html>

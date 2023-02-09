@@ -75,13 +75,11 @@ app.component('noteList', {
                 $scope.department=response1.data.response.department;
                 $scope.salary=response1.data.response.salary;
                 $scope.startDate=response1.data.response.startDate;
-            }
-            
+            } 
           }, (error) => {
             console.log(error)
         } )
     }
-
     //Delete Employee
     $scope.DeleteEmploy = function (EmployeeId) {
         $scope.EmployeeId=EmployeeId;
@@ -97,7 +95,6 @@ app.component('noteList', {
             console.log(error)
         } )
     }
-
     //Update
     $scope.UpdateEmploy= function (name,profile,gender,department,salary,startDate) {
         var data={
@@ -109,7 +106,6 @@ app.component('noteList', {
             salary:salary,
             startDate:startDate
         }
-
         $http.put("https://localhost:44327/api/Employ/Update" ,JSON.stringify(data), headersConfig)
           .then((response1) => {
             console.log(response1);
@@ -145,8 +141,6 @@ app.component('noteList', {
             console.log(error)
         } )
     }
-
-
     //Edit with popup part
 
     $scope.EditEmp=function(employeeId,name,gender,department,profile,salary,startDate){
@@ -159,7 +153,6 @@ app.component('noteList', {
             salary:salary,
             startDate:startDate
         }
-
         //call the service
         $http.put("https://localhost:44327/api/Employ/Update" ,JSON.stringify(data), headersConfig)
         .then(function(response){
@@ -172,7 +165,6 @@ app.component('noteList', {
                 $scope.email=response.data.email;
                 $scope.password=response.data.password;
                 $scope.password=response.data.designation;
-
             }
         },function(error){
             console.log(error)
@@ -180,7 +172,6 @@ app.component('noteList', {
       };
       
       $scope.editmodal = function (employeeId,name,gender,department,profile,salary,startDate) {
-    
         user = {
             employeeId:employeeId,
             name:name,
@@ -203,7 +194,6 @@ app.component('noteList', {
              }
            }
          });
-     
        }
 });  
 
@@ -222,7 +212,5 @@ app.controller("empeditController", function ($scope, $uibModalInstance,$window,
     $scope.ok = function () {
         window.location.reload();
       $uibModalInstance.close('save');
-  
-    }
-  
+    } 
   });
