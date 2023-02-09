@@ -79,6 +79,7 @@ a{
 input{
     transition:0.4s;
     margin-top:0.2rem;
+  /*   height:4rem; */
 }
 #uname{
     position:relative;
@@ -94,7 +95,7 @@ input{
     padding:0 1rem;
 }
 .googleEmail{
-    height:2rem;
+    height:3.6rem;
     width:100%;
 }
 
@@ -102,7 +103,7 @@ input{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    height:2.3rem;
+    height:4rem;
     margin-bottom: 1rem;
     
 }
@@ -111,7 +112,7 @@ input{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    height:2.3rem;
+    height:3.6rem;
     margin-bottom: 1rem;
 }
 
